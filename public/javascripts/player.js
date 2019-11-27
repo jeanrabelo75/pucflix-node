@@ -41,11 +41,14 @@ export default {
         if (this.currentPlaying === this.videoData.length) {
 
             this.restart();
+            this.play();
+
+        } else {
+
+            this.update();
+            this.play();
 
         }
-
-        this.update();
-        this.play();
 
     },
 
@@ -84,11 +87,12 @@ export default {
     update() {
 
         this.currentVideo = this.videoData[this.currentPlaying];
-        this.cover.style.background = `url('${utils.path(this.currentVideo.cover)}') no-repeat center center / cover`;
+        this.cover.style.background = `url('${this.currentVideo.cover}') no-repeat center center / cover`;
         this.title.innerText = this.currentVideo.title;
         this.producer.innerText = this.currentVideo.producer;
 
-        elements.createVideoElement.call(this, utils.path(this.currentVideo.file));
+        elements.createVideoElement.call(this, this.currentVideo.src);
+
 
         this.video.onloadeddata = () => {
 

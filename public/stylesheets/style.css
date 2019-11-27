@@ -2,37 +2,48 @@
 @import "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css";
 
 :root {
+
     --primary-color: #b31317;
+
 }
 
 body {
+
     height: 100vh;
     background-color: #efefef;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 #player {
+
     background-color: #fff;
     width: 90%;
     max-width: 375px;
     box-shadow: 
-        0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-        0px 3px 1px -2px rgba(0, 0, 0, 0.12), 
-        0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+        0 2px 2px 0 rgba(0, 0, 0, 0.12),
+        0 3px 1px -2px rgba(0, 0, 0, 0.12),
+        0 1px 5px 0 rgba(0, 0, 0, 0.2);
+
 }
 
 .card {
+
     box-shadow: none;
-    margin: 0px;
+    margin: 0;
+
 }
 
 .card-content {
+
     margin-top: 35px;
+
 }
 
 h4 {
+
     color: var(--primary-color);
     font-size: 20px;
     font-weight: bold;
@@ -41,47 +52,62 @@ h4 {
     align-items: center;
     justify-content: center;
     padding: 12px;
+
 }
 
 .card-image {
+
     height: 200px;
 
 }
 
 video {
+
     width: 100%;
     max-width: 375px;
+
 }
 
 .btn-floating.halfway-fab {
+
     right: 10px;
+
 }
 
-
 #play-pause {
+
     background-color: var(--primary-color);
     transform: translate(2px 2px);
+
 }
 
 #volume {
+
     color: var(--primary-color);
     transform: translateY(2px);
+
 }
 #fullscreen {
+
     color: var(--primary-color);
     transform: translateY(3px);
+
 }
 
-/* Navetagotrs custom colors */
-
 input[type="range"]::-webkit-slider-thumb {
+
     background-color: var(--primary-color);
+
 }
 
 input[type="range"]::-moz-range-thumb {
+
     background-color: var(--primary-color);
+
 }
 
 input[type="range"]::-ms-thumb {
+
     background-color: var(--primary-color);
+
 }
