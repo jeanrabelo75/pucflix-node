@@ -20,4 +20,6 @@ In your project root folder, just run:
 `docker-compose up`
 
 ### And you're ready to go!
-#####(ps. In case you wanna stop, just press `Ctrl + C`)
+
+
+###### ps. In case you wanna stop, just press `Ctrl + C`
