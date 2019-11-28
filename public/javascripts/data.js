@@ -1,6 +1,7 @@
 export default [
 
   {
+    tagId: 1,
     title: "Iniciando com Git",
     producer: "RocketSeat",
     cover: "https://smh-node.s3-sa-east-1.amazonaws.com/cover/git.png",
@@ -8,6 +9,7 @@ export default [
   },
 
   {
+    tagId: 2,
     title: "TypeScript - The Basics",
     producer: "Fireship",
     cover: "https://smh-node.s3-sa-east-1.amazonaws.com/cover/typescript.png",
@@ -15,6 +17,7 @@ export default [
   },
 
   {
+    tagId: 3,
     title: "Introdução ao Docker",
     producer: "The Simple Engineer",
     cover: "https://smh-node.s3-sa-east-1.amazonaws.com/cover/docker.png",

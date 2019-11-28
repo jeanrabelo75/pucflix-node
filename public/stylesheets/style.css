@@ -111,3 +111,24 @@ input[type="range"]::-ms-thumb {
     background-color: var(--primary-color);
 
 }
+
+#info {
+
+    display: flex;
+
+}
+
+.next-button {
+
+    display: flex;
+
+}
+
+#next {
+
+    padding: 85px 0 0 0;
+    border-radius: 0 0 2px 2px;
+    cursor: pointer;
+    margin-left: 20px;
+
+}

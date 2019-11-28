@@ -20,6 +20,8 @@ export default {
         this.totalDuration   = document.querySelector("#total-duration");
 
         this.fullScreen      = document.querySelector("#fullscreen");
+        this.nextButton      = document.querySelector("#next");
+
     },
 
     createVideoElement(video) {
@@ -29,8 +31,6 @@ export default {
     },
 
     actions() {
-
-        this.video.onended = () => this.next();
 
         this.video.ontimeupdate = () => this.timeUpdate();
         this.playPause.onclick  = () => this.togglePlayPause();
@@ -46,6 +46,7 @@ export default {
         this.totalDuration.innerText = utils.secondsToMinutes(this.video.duration);
 
         this.fullScreen.onclick = () => utils.fullScreen(this.video);
+        this.nextButton.onclick = () => this.next();
 
     }
 

@@ -40,8 +40,7 @@ export default {
         
         if (this.currentPlaying === this.videoData.length) {
 
-            this.restart();
-            this.play();
+            window.location.href = '/';
 
         } else {
 
@@ -92,7 +91,6 @@ export default {
         this.producer.innerText = this.currentVideo.producer;
 
         elements.createVideoElement.call(this, this.currentVideo.src);
-
 
         this.video.onloadeddata = () => {
 
