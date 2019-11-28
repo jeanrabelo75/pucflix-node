@@ -11,6 +11,7 @@ export default {
 
     start() {
 
+        this.currentPlaying = this.getParameterByName('id') - 1;
         elements.set.call(this);
         this.update();
 
@@ -105,6 +106,21 @@ export default {
         this.currentPlaying = 0;
         this.video.remove();
         this.update();
+
+    },
+
+    getParameterByName(name, url) {
+
+        if (!url) url = window.location.href;
+
+        name = name.replace(/[\[\]]/g, '\\$&');
+
+        let regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'), results = regex.exec(url);
+
+        if (!results) return null;
+        if (!results[2]) return '';
+
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
 
     },
 

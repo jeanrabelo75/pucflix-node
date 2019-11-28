@@ -8,56 +8,22 @@
 <body>
 
     <div class="card-video">
-        <div class="title"> 
-            <i class="material-icons">equalizer</i> PucFlix</h4>
+
+        <div class="title">
+            <div class="sub-title">
+                <i class="material-icons">equalizer</i> PucFlix</h4>
+            </div>
+            <div class="sub-title" id="search-div">
+                <label for="search"></label><input type="text" placeholder="Pesquisar..." id="search" maxlength="100">
+                <span id="error-msg">Estamos implementando. Perdão! :(</span>
+            </div>
         </div>
-            <div class="row">
-                <div class="col s12 m4 l4">
-                    <div class="card">
-                        <div class="card-image">
-                            <div class="card-image-content">
-        
-                            </div>
 
-                            
-                            <div class="card-content">
-                                <h5>Title</h5>
-                                <p class="producer">Producer</p>
-                            </div>
-                        </div>
-                    </div>   
-                </div>
-
-                <div class="col s12 m4  l4">
-                    <div class="card">
-                        <div class="card-image">
-                            <div class="card-image-content">
-        
-                            </div>
-                            <div class="card-content">
-                                <h5>Title</h5>
-                                <p class="producer">Producer</p>
-                            </div>
-                        </div>
-                    </div>   
-                </div>
-                <div class="col s12 m4  l4">
-                    <div class="card">
-                        <div class="card-image">
-                            <div class="card-image-content">
-        
-                            </div>
-                            <div class="card-content">
-                                <h5>Title</h5>
-                                <p class="producer">Producer</p>
-                            </div>
-                        </div>
-                    </div>   
-                </div>
-             
-              </div>
+        <div class="row" id="home"></div>
 
     </div>
+
+    <script src="javascripts/home.js" type="module"></script>
 
 </body>
 </html>
