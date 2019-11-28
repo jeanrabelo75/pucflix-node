@@ -66,7 +66,7 @@ export default {
 
     setVolume(value) {
 
-        this.video.volumeControl = value / 100;
+        this.video.volume = value / 100;
 
     },
 
